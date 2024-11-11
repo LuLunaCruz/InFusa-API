@@ -23,6 +23,6 @@ userRouter.route('/reset_password/:code')
     .post(resetPassword)
 
 userRouter.route('/admin')
-    .post(createAdmin)
+    .post(verifyAdmin, createAdmin)
 
 module.exports = userRouter;
